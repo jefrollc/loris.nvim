@@ -62,8 +62,8 @@ M.parse_block = function()
 	-- Get the code block
 	local code_block = table.concat(lines, "\n", start_pos + 2, end_pos - 1)
 
-	print("Creating " .. language .. " file")
-	print("With code block:\n", code_block)
+	-- print("Creating " .. language .. " file")
+	-- print("With code block:\n", code_block)
 
 	local file = io.open("/tmp/temp", "w")
 	if file == nil then
