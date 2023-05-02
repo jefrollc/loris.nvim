@@ -66,7 +66,7 @@ M.parse_block = function()
 	-- print("Lines ", P(lines))
 	-- print("With code block:\n", code_block)
 
-	local file = io.open("/tmp/temp", "w")
+	local file = io.open("/tmp/temp.zig", "w")
 	if file == nil then
 		print("Unable to open temp file")
 		return
