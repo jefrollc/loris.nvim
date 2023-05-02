@@ -60,12 +60,13 @@ M.parse_block = function()
 	end
 
 	-- Get the code block
-	local code_block = table.concat(lines, "\n", start_pos + 2, end_pos - 1)
+	local code_block = table.concat(lines, "\n", start_pos + 1, end_pos - 1)
 
 	-- print("Creating " .. language .. " file")
+	-- print("Lines ", P(lines))
 	-- print("With code block:\n", code_block)
 
-	local file = io.open("/tmp/temp", "w")
+	local file = io.open("/tmp/temp.zig", "w")
 	if file == nil then
 		print("Unable to open temp file")
 		return
