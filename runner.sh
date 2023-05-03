@@ -11,7 +11,7 @@ get_interpreter() {
     fi
     # herf durf, switch statement!
     if [[ $shebang =~ ^"//usr/bin/env zig run" ]]; then
-      echo "./temp.zig"
+      echo "/tmp/temp.zig"
       return
     fi
     echo "Must have a shebang at the start"
