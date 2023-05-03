@@ -19,4 +19,4 @@ will write the block to the file and `runner.sh` should run it.
 
 ### Todo:
 
-Need to test more languages. Currently have only tested zsh, python, and zig.
+Need to test more languages. Currently I have only tested `zsh`, `python`, and `zig`. What else do we really need though?
