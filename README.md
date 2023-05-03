@@ -10,9 +10,9 @@ Navigate to a Tmux pane and run the shell script `runner.sh`. This uses
 
 In Neovim from any file add a code block the way you would on github or in markdown using: 
 
-\```language
+\`\`\`language
 <code>
-\```
+\`\`\`
 
 With your cursor in the code block call `require('loris').parse_block()`. This
 will write the block to the file and `runner.sh` should run it.  
